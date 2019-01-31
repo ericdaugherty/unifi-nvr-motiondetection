@@ -1,5 +1,5 @@
 # UniFi NVR Motion Detector
-[![Go Report Card](https://goreportcard.com/badge/github.com/ericdaugherty/imagefetcher)](https://goreportcard.com/report/github.com/ericdaugherty/imagefetcher)
+[![Go Report Card](https://goreportcard.com/badge/github.com/ericdaugherty/unifi-nvr-motiondetection)](https://goreportcard.com/report/github.com/ericdaugherty/unifi-nvr-motiondetection)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ericdaugherty/unifi-nvr-motiondetection/blob/master/LICENSE)
 
 This package monitors the monitor.log file written by the Ubiquiti UniFi NVR, 

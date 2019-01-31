@@ -29,9 +29,9 @@ func TestGetCameraID(t *testing.T) {
 
 func TestDetectMotionNoFile(t *testing.T) {
 
-	_, err := DetectMotion("/Non/existant/file/should/fail")
+	_, err := DetectMotion("/Non/existent/file/should/fail")
 	if err == nil {
-		t.Error("DetectMotion should return an error immediatly for a non-existant file.")
+		t.Error("DetectMotion should return an error immediately for a non-existent file.")
 	}
 }
 
