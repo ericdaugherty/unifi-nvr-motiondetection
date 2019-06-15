@@ -11,7 +11,7 @@ import (
 var filter *regexp.Regexp
 
 func init() {
-	filter = regexp.MustCompile(`Camera\[(.+)\] type:(\w+) `)
+	filter = regexp.MustCompile(`\[AnalyticsService\] \[(.+)\|(.+)\] MotionEvent type:(\w+) `)
 }
 
 // MotionDetector manages the callbacks for start and stop events.
@@ -96,7 +96,7 @@ func getCameraID(logline string) (string, string) {
 
 	s := filter.FindStringSubmatch(logline)
 	if len(s) > 2 {
-		return s[1], s[2]
+		return s[1], s[3]
 	}
 	return "", ""
 }
